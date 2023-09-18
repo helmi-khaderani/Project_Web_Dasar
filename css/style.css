@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* { 
+    box-sizing: border-box;
+}   
+
+.nav-list {
+    background-color: #952323;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+}
+
+.user-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+header.navbar-container .logo-teks {
+    text-align: center;
+    width: auto;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Merienda', sans-serif;
+}
+
+.nav-list ul {
+    width: 100%;
+    text-align: right;
+  }
+   
+.nav-list li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+.nav-list li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 100px;
+    transition: all .2s ease-in-out;
+}
+   
+.nav-list li:hover a {
+    background-color: #DAD4B5;
+    color: #952323;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: #952323;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info p{
+    font-size: 1em;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.user-info hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-menu-link p:hover{
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Merienda', sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+.content-description {
+    padding: 1em;
+}
+
+.content-description p{
+    font-size: 1.7em;
+    text-align: justify;
+    box-shadow: 5px 5px 10px #A73121;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin-top: 100px;
+    padding: 1em;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4em;
+    column-gap: 10em;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-image{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-container section{
+    text-align: center;
+    box-shadow: 5px 5px 10px #A73121;
+    border-radius: 10px;
+    width: 30em;
+    height: 30em;
+}
+
+.menu-container h2{
+    margin: 0;
+    padding: 0.5em;
+}
+
+.menu-container .menu-image{
+    padding: 1em;
+}
+
+.menu-container p{
+    text-align: justify;
+    margin: 0;
+    padding: 1em;
+}
+
+.Tentang-kami {
+    padding: 1em;
+}
+
+.Tentang-kami p{
+    font-size: 1.7em;
+    text-align: justify;
+    box-shadow: 5px 5px 10px #A73121;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+#Kontak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #A73121;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #DAD4B5;
+    color: white;
+}
+
+.contact-person header{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contact-person table{
+    padding: 1em;
+    text-align: justify;
+}
+
+#Beranda{
+    scroll-margin-top: 10em;
+}
+
+#Menu{
+    scroll-margin-top: 10em;
+}
+
+#Tentang-kami{
+    scroll-margin-top: 10em;
+}
+
+#Kontak{
+    scroll-margin-top: 10em;
+}
+
+.foto-diri {
+    width: 10em;
+    height: 10em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #DAD4B5;
+}
+
+footer{
+    color: white;
+    background-color: #952323;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p{
+    margin: 0;
+    font-family: 'Merienda', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-description p{
+        font-size: 1em;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    #Tentang-kami p{
+        font-size: 1em;
+    }
+
+    .menu-container section{
+        width: auto;
+        height: auto;
+    }
+
+}
+/*F2E8C6 DAD4B5 A73121 952323 */
